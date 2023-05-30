@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgba(23,23,23,0.199);
+    padding: 30px;
+    position: absolute;
+    top: 0;
+}
+
+header a{
+    text-decoration: none;
+margin-right: 100px;
+letter-spacing: 1px;
+font-size: 17px;
+font-family: Tahoma;
+color: rgba(255,255,255,0.719);
+}
+
+header .container{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.banner-container{
+    width: 100%;
+    background: linear-gradient(rgba(16, 58, 19, 0.8),rgba(15, 161, 27,0.6)),url('https://images.pexels.com/photos/131634/pexels-photo-131634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-size: contain;
+background-attachment: fixed;
+background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left h1{
+ margin: 0;
+ color: whitesmoke;
+ font-size: 45px;
+}
+
+.banner-container .container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.left p{
+    margin: 0;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.884);
+    margin-top: 24px;
+    line-height: 36px;
+}
+
+.left{
+    width: 700px;
+    align-self: flex-start;
+}
+
+.left button{
+    background-color: white;
+    border: none;
+    padding: 10px 50px;
+    font-weight: bolder;
+    border-radius: 7px;
+    margin-top: 16px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Right section */
+
+.right{
+    width: 430px;
+    background-color: white;
+    border-radius: 17px;
+    padding: 40px 0;
+    box-shadow: 7px 6px 10px rgba(0,0,0,5);
+}
+
+.right h4{
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(136,136,136);
+}
+
+.input-group{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+position: relative;
+}
+
+.input-group label{
+    font-size: 17px;
+    color: rgb(165, 165,165);
+    position: absolute;
+    top: 12px;
+    transition: 0.4s ease-in-out;
+}
+
+.input-group input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    caret-color: rgb(136,136,136);
+    outline: none;
+    color: var(--primary-color);
+   border-bottom: 1px solid rgb(136,136,136);
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    color: var(--primary-color);
+    top: -10px;
+    font-size: 15px;
+}
+.input-group input:focus,
+.input-group input:valid{
+border-color: var(--primary-color);
+}
+
+
+.button1{
+background-color: var(--primary-color);
+color: white;
+border: none;
+border-radius: 5px;
+padding: 11px 0;
+margin-top: 15px;
+width: 200px;
+cursor: pointer;
+font-weight: bolder;
+}
+
+.submit-button{
+    text-align: center;
+}
+
+
+.button1:hover{
+    box-shadow: 0 3px 6px silver;
+}
+
